@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="product-page-title">Detalle del Producto - Borderage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+            <div class="nav-container">
+                <a href="index.html" aria-current="page" class="nav-logo w-nav-brand w--current">Borderage</a>
+                <nav role="navigation" class="nav-desktop-elements w-nav-menu">
+                    <ul role="list" class="nav-menu">
+                        <li><a href="index.html#features" class="nav-link">Productos</a></li>
+                        <li><a href="index.html#categories" class="nav-link">Categorías</a></li>
+                        <li><a href="index.html#about" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar..." class="search-input">
+                            <button class="search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="nav-link cart-icon-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="burger-menu" id="burgerMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="close-btn" id="closeMobileMenu"><i class="fas fa-times"></i></div>
+            <ul class="mobile-nav-menu">
+                <li><a href="index.html#features" class="mobile-nav-link">Productos</a></li>
+                <li><a href="index.html#categories" class="mobile-nav-link">Categorías</a></li>
+                <li><a href="index.html#about" class="mobile-nav-link">Sobre Nosotros</a></li>
+                <li><a href="index.html#contact" class="mobile-nav-link">Contacto</a></li>
+            </ul>
+            <div class="search-box mobile-search">
+                <input type="text" placeholder="Buscar..." class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-icons mobile-icons flex-horizontal x-center">
+                <a href="#" class="mobile-nav-link"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="mobile-nav-link cart-icon-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container product-detail-container">
+                <div class="product-detail-image-gallery">
+                    <img id="main-product-image" src="placeholder.jpeg" alt="Main Product Image" class="main-product-image">
+                    </div>
+                <div class="product-detail-info">
+                    <h1 id="product-detail-title" class="product-title">Nombre del Producto</h1>
+                    <p id="product-detail-price" class="product-price">$0.00</p>
+                    <p id="product-detail-description" class="product-detail-description">Descripción detallada del producto...</p>
+
+                    <div class="product-options">
+                        <label for="size-select">Talla:</label>
+                        <select id="size-select">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                        </select>
+                    </div>
+
+                    <div class="add-to-cart-section">
+                        <div class="quantity-selector">
+                            <button id="decrease-quantity" class="quantity-button">-</button>
+                            <input type="number" id="quantity-input" value="1" min="1" class="quantity-display">
+                            <button id="increase-quantity" class="quantity-button">+</button>
+                        </div>
+                        <button id="detail-add-to-cart-btn" class="button primary-btn product-detail-add-to-cart-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products-section">
+            <div class="container">
+                <h2 class="h2-heading">Productos Relacionados</h2>
+                <div class="product-listing-grid">
+                    <div class="single-product-card card" data-product-id="1" data-name="Playera Oversize Blanca" data-price="699.00" data-image="WhatsApp Image 2025-06-27 at 1.42.52 PM (1).jpeg">
+                        <a href="product.html?id=1" class="w-inline-block">
+                            <img src="WhatsApp Image 2025-06-27 at 1.42.52 PM (1).jpeg" alt="Playera Oversize Blanca" class="product-image has-dark-background">
+                        </a>
+                        <div class="product-info">
+                            <a href="product.html?id=1" class="w-inline-block">
+                                <h3 class="product-title h4-heading utility-margin-bottom-0-5rem">Playera Oversize Blanca</h3>
+                            </a>
+                            <p class="product-price">$699.00</p>
+                            <button class="button-81 add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="single-product-card card" data-product-id="2" data-name="Playera Oversize negra" data-price="699.00" data-image="WhatsApp Image 2025-06-27 at 1.42.53 PM (1).jpeg">
+                        <a href="product.html?id=2" class="w-inline-block">
+                            <img src="WhatsApp Image 2025-06-27 at 1.42.53 PM (1).jpeg" alt="Playera Oversize negra" class="product-image has-dark-background">
+                        </a>
+                        <div class="product-info">
+                            <a href="product.html?id=2" class="w-inline-block">
+                                <h3 class="product-title h4-heading utility-margin-bottom-0-5rem">Playera Oversize negra</h3>
+                            </a>
+                            <p class="product-price">$699.00</p>
+                            <button class="button-81 add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <a href="#" class="nav-logo">Borderage</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+                <p class="paragraph-sm utility-margin-bottom-0">&copy; 2025 Borderage. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

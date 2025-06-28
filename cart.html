@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito - Borderage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+            <div class="nav-container">
+                <a href="index.html" aria-current="page" class="nav-logo w-nav-brand w--current">Borderage</a>
+                <nav role="navigation" class="nav-desktop-elements w-nav-menu">
+                    <ul role="list" class="nav-menu">
+                        <li><a href="index.html#features" class="nav-link">Productos</a></li>
+                        <li><a href="index.html#categories" class="nav-link">Categorías</a></li>
+                        <li><a href="index.html#about" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar..." class="search-input">
+                            <button class="search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="nav-link cart-icon-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="burger-menu" id="burgerMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="close-btn" id="closeMobileMenu"><i class="fas fa-times"></i></div>
+            <ul class="mobile-nav-menu">
+                <li><a href="index.html#features" class="mobile-nav-link">Productos</a></li>
+                <li><a href="index.html#categories" class="mobile-nav-link">Categorías</a></li>
+                <li><a href="index.html#about" class="mobile-nav-link">Sobre Nosotros</a></li>
+                <li><a href="index.html#contact" class="mobile-nav-link">Contacto</a></li>
+            </ul>
+            <div class="search-box mobile-search">
+                <input type="text" placeholder="Buscar..." class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-icons mobile-icons flex-horizontal x-center">
+                <a href="#" class="mobile-nav-link"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="mobile-nav-link cart-icon-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container cart-page-container">
+                <h1 class="h2-heading utility-text-align-center utility-margin-bottom-2rem">Tu Carrito de Compras</h1>
+                <div id="cart-items-container">
+                    <p>Tu carrito está vacío.</p>
+                </div>
+                <div class="cart-summary">
+                    <p>Subtotal: $<span id="cart-subtotal">0.00</span></p>
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                </div>
+                <div class="checkout-button-container">
+                    <button id="checkout-button" class="button primary-btn checkout-button" disabled>Proceder al Pago</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <a href="#" class="nav-logo">Borderage</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+                <p class="paragraph-sm utility-margin-bottom-0">&copy; 2025 Borderage. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
